@@ -5,29 +5,13 @@
 
 }
 html, body{
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
-}
-
-@media screen and (max-width: 768px){
-    h1{
-        font-size: 1.8rem !important;
-        text-align: center;
-    }
-    nav ul{
-        flex-direction: column !important;
-        align-items: center;
-        gap: 15px;
-    }
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-html{
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
+
+
 
 body{
     background-image: url(../media/back.jpeg);
@@ -361,3 +345,50 @@ section h1{
     margin-bottom: 15px;
 }
 /* end footer */
+
+@media screen and (max-width: 768px){
+    h1 .logo{
+        font-size: 1.5rem !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .cards, .container, .imgs{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        width: 100% !important;
+        padding: 10px;
+    }
+    .imgs img, .card img{
+        width: 90% !important;
+        height: auto !important;
+        margin-bottom: 15px;
+    }
+    .card{
+        width: 90% !important;
+        margin: 10px auto !important;
+
+    }
+    h1, h2{
+        font-size: 1.3rem !important;
+        line-height: 1.4;
+        text-align: center;
+    }
+    form{
+        width: 90% !important;
+        display: flex;
+        flex-direction: column !important;
+    }
+    input, textarea{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+}
