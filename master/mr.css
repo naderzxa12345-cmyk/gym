@@ -4,27 +4,26 @@
     box-sizing: border-box;
 
 }
-
+html, body{
+    max-width: 100%;
+    overflow: hidden;
+}
 
 @media screen and (max-width: 768px){
+    h1{
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
     nav ul{
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
+        gap: 15px;
     }
-    .pricing .cards{
-        flex-direction: column;
-        align-items: center;
-    }
-    .training-programs .contaner .card{
-        width: 100%;
-        flex-direction: column;
-
-    }
-    .imgs{
-        flex-direction: column;
-        width: 100%;
+    img{
+        max-width: 100%;
         height: auto;
     }
+
 }
 html{
     scroll-behavior: smooth;
