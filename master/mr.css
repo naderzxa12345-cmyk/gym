@@ -114,6 +114,12 @@ header .container nav ul{
     font-weight: bold;
     
 }
+.about p{
+    align-items: center;
+    font-size: 35px;
+    padding: 30px;
+}
+
 
 /* end about */
 
@@ -302,7 +308,8 @@ section h1{
 
 /* start footer */;
 .footer{
-    margin: -40px;
+    margin-top: 20px;
+    padding: 20px;
     background: white;
     color: white;
     text-align: center;
@@ -325,6 +332,7 @@ section h1{
 }
 
 .social i{
+    margin-bottom: 20px;
     color: white;
     font-size: 25px;
     cursor: pointer;
@@ -344,29 +352,86 @@ section h1{
     align-items: center;
     margin-bottom: 15px;
 }
+
+form button{
+    margin-bottom: 20px;
+}
 /* end footer */
 
-@media screen and (max-width: 768px){
-    nav ul{
-        flex-direction: column !important;
+@media (max-width: 1000px){
+    header .container{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header .container nav ul{
         gap: 15px;
+        padding-right: 30px;
+        font-size: 25px;
     }
-    .cards{
-        display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        gap: 20px;
-        padding: 20px;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+
+    header .container .logo{
+        margin-bottom: 20px;
     }
-    .card{
-        flex: 0 0 80% !important;
-        scroll-snap-align: center;
-        margin: 0 !important;
+
+    .contaner{
+        flex-direction: column;
     }
-    .cards::-webkit-scrollbar{
-        display: none;
+
+    section .imgs{
+        flex-direction: column;
     }
+
+
+    @media (max-width: 600px){
+        header .container{
+            flex-direction: column;
+            padding: 5px;
+        }
+        header .container nav ul{
+            gap: 7px;
+            padding-right: 15;
+            font-size: 20px;
+        }
+        .about h2{
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .about p{
+            font-size: 20px;
+            align-items: center;
+        }
+        .training-programs{
+            height: auto;
+        }
+        .training-programs h1{
+            font-size: 40px;
+            align-items: center;
+
+        }
+
+        .card h2{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .pricing .cards{
+            flex-direction: column;
+
+        }
+
+        section form{
+            width: 200px;
+            margin: 0 auto;
+        }
+
+
+
+    }
+    
+
+
+
 
 }
