@@ -406,9 +406,10 @@ form button{
             height: auto;
         }
         .training-programs h1{
-            font-size: 40px;
+            font-size: 30px;
             align-items: center;
-
+            justify-content: center;
+            
 
         }
 
