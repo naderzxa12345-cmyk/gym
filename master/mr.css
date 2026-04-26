@@ -391,7 +391,7 @@ form button{
         header .container nav ul{
             gap: 7px;
             padding-right: 15;
-            font-size: 20px;
+            font-size: 15px;
         }
         .about h2{
             font-size: 30px;
@@ -409,6 +409,7 @@ form button{
             font-size: 40px;
             align-items: center;
 
+
         }
 
         .card h2{
@@ -424,6 +425,18 @@ form button{
         section form{
             width: 200px;
             margin: 0 auto;
+        }
+
+        section h1{
+            align-items: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .content p{
+            font-size: 10px;
+            align-items: center;
+            margin-bottom: 7px;
         }
 
 
